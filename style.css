@@ -4,5 +4,17 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url("./sunflower.png");
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    width:100vw;
+    height:100vh;
+    background: url("./sunflower.png") no-repeat center ;
+    z-index:-1;
+    filter: blur(0px);
 }
