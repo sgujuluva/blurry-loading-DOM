@@ -12,10 +12,10 @@ function increaseCounter(){
     }
     //append the value image to the selectimage
     selectText.innerText = `${load}%`;
-    selectText.getElementsByClassName.opacity = range(load,0,100,1,0);
-    imageContainer.getElementsByClassName.filter = `blur(${scale(load,0,100,30,0)}px)`;
+    selectText.style.opacity = range(load,0,100,1,0);
+    imageContainer.style.filter = `blur(${range(load,0,100,30,0)}px)`;
 }
 //mapping a range of numbers to another range of numbers
-let range = (number, in_min, in_max,out_min,out_max) => {
+let range = (num, in_min, in_max,out_min,out_max) => {
     return ((num -in_min) * (out_max - out_min) / (in_max-in_min) + out_min);
 }
